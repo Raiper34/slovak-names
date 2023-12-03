@@ -1,0 +1,38 @@
+{
+    "name": "slovak-names",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "description": "Slovak names NPM library",
+    "keywords": [
+        "slovak",
+        "slovak names",
+        "slovak fornames",
+        "names",
+        "fornames",
+        "surnames",
+        "slovenske mena",
+        "slovenske priezviska",
+        "mena",
+        "priezviska"
+    ],
+    "repository": "https://github.com/Raiper34/slovak-names",
+    "homepage": "https://github.com/Raiper34/slovak-names",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "crawlee": "^3.0.0",
+        "@apify/tsconfig": "^0.1.0",
+        "tsx": "^4.4.0",
+        "typescript": "~5.3.0",
+        "@types/node": "^20.0.0"
+    },
+    "scripts": {
+        "build": "npx tsc",
+        "start:crawler": "tsx --tsconfig crawler/tsconfig.json crawler/src/main.ts",
+        "publish": "npm run build && npm publish"
+    },
+    "author": "Filip Raiper34 Gulan",
+    "license": "MIT"
+}
